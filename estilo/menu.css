@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav{
+    background-color: rgb(106, 106, 106);
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 36px;
+}
+
+a{
+    color: rgb(4, 8, 212);
+    margin-right: 20px;
+}
