@@ -50,7 +50,9 @@ main h1 {
 main h4 {
     margin-top: 10px;
 }
-
+main #profile{
+    height: 576px;
+}
 footer {
     background-color: rgb(45, 45, 45);
     text-align: center;
