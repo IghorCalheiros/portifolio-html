@@ -1,204 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="./estilo/menu.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/main.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/wrap.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/footer.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
 
-    <style>
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/curriculo.css">
 
-
-        table,
-        td,
-        tr {
-            empty-cells: show;
-            border: 1px solid #dddddd;
-            text-align: left;
-            /* padding: 8px; */
-        }
-
-        .hab {
-            width: 20px;
-        }
-
-        .cell_hab {
-            background-color: rgb(18, 191, 18);
-        }
-    </style>
 </head>
 
 <body>
-    <div class="warp">
+    <header>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">
+            &#9776;
+        </label>
+        <nav class="menu">
+            <ul class="ul_left">
+                <li id="logo_list">
+                    <a href="" id="link_logo">
 
+                        <img class="iconlogo" src="./images/iconlogopng.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html" class="itens">
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="ul_right">
+                <li><a href="./portifolio.html" class="itens">portifólio</a>
+                </li>
+                <li><a href="./curriculo.html" class="itens">Curriculo</a></li>
+                <li><a href="./contato.html" class="itens">Contato</a></li>
+                <li><a href="./novidades.html" class="itens">Novidades</a></li>
+                <li><a href="./emDesenvolvimento.html" class="itens">Em&nbsp;desenvolvimento</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="curriculo.html">Currículo</a></li>
-                    <li><a href="portifolio.html">Portifólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-
-        <main>
+    <main>
+        <div class="col-left">
             <h1>Currículo</h1>
-            <section>
-                <img src="curriculo_img.jpg" style="width:150px; height:auto;" alt="">
-                <br>
-                <audio controls>
-                    <source src="./audio/apresentacao.ogg" type="audio/ogg">
-                </audio>
-                <hr>
-                <div>
-                    <li for="">Rio de Janeiro</li>
-                    <li for="">987938703</li>
-                    <li for="">ighor.calheiros@gmail.com</li>
-                    <li for=""><a
-                            href="https://www.linkedin.com/in/ighor-calheiros-cleto-pereira-a95034149/">Linkedin</a>
-                    </li>
+            <ul class="info">
+                <li>Rio de Janeiro</li>
+                <li>(21) 987938703</li>
+                <li>ighor.calheiros@gmail.com</li>
+                <li><a href="">Linkedin</a></li>
+            </ul>
+            
+            <h4>Experiência</h4>
+            <ul>
+                <li>Designer em Aquarentenamag; Estagiário em Tourné Audiovisual</li>
+            </ul>
+            <h4>Formação</h4>
+            <ul class="formacao">
+                <li>Colégio de Aplição da UFRJ - Cap UFRJ</li>
+                <li>Design Gráfico - Universidade Veiga de Almeira (cursando)</li>
+            </ul>
+            <h4>Conhecimentos</h4>
+            <ul class="conhecimentos">
+                <li>Photoshop</li>
+                <li>Ilustrator</li>
+                <li>Figma</li>
+                <li>After Effects</li>
+                <li>Premier</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Inglês</li>
 
-                </div>
-            </section>
+            </ul>
 
 
-            <section>
-                <h2>Experiência</h2>
-                <br>
-                <p>Designer em aquarentenamag; Estagiário em Tourné Audiovisual</p>
+        </div>
 
-            </section>
+        <div class="col-right">
+            <img src="./images/profile.jpg" alt="">
+        </div>
+
+    </main>
 
 
-            <section>
-                <h2>Formação</h2>
-                <br>
-                <ul>
-                    <li>Colégio de Aplição da UFRJ - Cap UFRJ</li>
-                    <li>Design Gráfico - Universidade Veiga de Almeira (cursando)</li>
-                </ul>
-                <br>
-            </section>
-
-            <section>
-                <h2>Habilidades</h2>
-                <br>
-                <table>
-                    <tr>
-                        <td>Photoshop</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>Ilustrator</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>Premier</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>After Effects</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>Figma</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                    <tr>
-                        <td>Ingles</td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab cell_hab"></td>
-                        <td class="hab"></td>
-                    </tr>
-                </table>
-
-            </section>
-        </main>
+    <footer>
         <br>
-        <br>
-        <br>
-        <br>
-
-        <footer>
-            todos os direitos reservados (c)
-        </footer>
-    </div>
+        ighor calheiros ©
+    </footer>
 </body>
 
 </html>

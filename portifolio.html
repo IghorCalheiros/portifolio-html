@@ -3,116 +3,121 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="./estilo/menu.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/main.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/wrap.css" type="text/css">
-    <link rel="stylesheet" href="./estilo/footer.css" type="text/css">
-    <style>
-        article img {
-            width: 500px;
-        }
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/porifolio.css">
 
-        article {
+    <link rel="stylesheet" href="./style/footer.css">
 
-            background-color: rgb(210, 210, 210);
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="warp">
 
+    <header>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">
+            &#9776;
+        </label>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="curriculo.html">Currículo</a></li>
-                    <li><a href="portifolio.html">Portifólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="menu">
+            <ul class="ul_left">
+                <li id="logo_list">
+                    <a href="" id="link_logo">
 
-        <main>
-            <h1>Portifólio</h1>
-            <section>
-                <h2>Ilustrações</h2>
-                <a href="">
+                        <img class="iconlogo" src="./images/iconlogopng.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html" class="itens">
+                        Home
+                    </a>
+                </li>
+            </ul>
+            <ul class="ul_right">
+                <li><a href="./portifolio.html" class="itens">portifólio</a>
+                </li>
+                <li><a href="./curriculo.html" class="itens">Curriculo</a></li>
+                <li><a href="./contato.html" class="itens">Contato</a></li>
+                <li><a href="./novidades.html" class="itens">Novidades</a></li>
+                <li><a href="./emDesenvolvimento.html" class="itens">Em&nbsp;desenvolvimento</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <article>
-                        <h3>Portifólio Criativo</h3>
-                        <img src="./portifolio/Currículo Criativo.jpg" alt="">
+    <main>
+        <h1>Porifólio</h1>
+        <h2>Ilustrações</h2>
+        <div class="ilustration_container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <a href="">
+                            <img src="./images/CurriculoCriativo.jpg" alt="">
+                        </a>
+                        <h3>Portifolio criativo</h3>
                         <p>Trabalho desenvolvido ao longo de disciplina na faculdade</p>
-                    </article>
-                </a>
-
-                
-                <a href="">
-                    <article>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="">
+                            <img src="./images/Lapis.jpg" alt="">
+                        </a>
                         <h3>Lápis feitos com vetores</h3>
-                        <img src="./portifolio/Lápis.jpg" alt="">
-                        <p>Trabalho realizado na disciplina de Ilustração Digital</p>
-                    </article>
-                </a>
+                        <p>Trabalho Realizado na disciplina de Ilustração Digital</p>
+                    </div>
+                </div>
 
+            </div>
 
-                <a href="">
-
-                    <article>
-                        <h3>Mickey</h3>
-                        <img src="./portifolio/Mickey.jpg" alt="">
-                        <p>Mickey desenhado como trabalho em disciplina na faculdade</p>
-                    </article>
-                </a>
-
-                <a href="">
-
-
-                    <article>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <a href="">
+                            <img src="./images/Mickey.jpg" alt="">
+                        </a>
+                        <h3>Mickey Mouse</h3>
+                        <p>Mickey desenhando como trabalho em disciplina na faculdade</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <a href="">
+                            <img src="./images/GokuMigate.jpg" alt="">
+                        </a>
                         <h3>Goku Migate</h3>
-                        <img src="./portifolio/GokuMigate.jpg" alt="">
                         <p>Esboço de Ilustração feita como treino</p>
-                    </article>
-                </a>
-            </section>
-            <br>
-            <br>
-            <br>
+                    </div>
+                </div>
 
-            <section>
-                <h2>Videos</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6BFtUrJcxkw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            </div>
+        </div>
 
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/tMB-L9SONug"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/20ShNqjYL8w"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="video_container">
+            <h2>Vídeos</h2>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/6BFtUrJcxkw?si=P-m24hAWpasSBF6V"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> <br>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/tMB-L9SONug?si=_Nm5mUAfOHLFY3P1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> <br>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/20ShNqjYL8w?si=uPhn052ujCvBLQI1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br><br>
+        </div>
 
 
-            </section>
-            <br><br><br>
-        </main>
+    </main>
 
-
-        <footer>
-            todos os direitos reservados (c)
-        </footer>
-    </div>
+    <footer>
+        <br>
+        ighor calheiros ©
+    </footer>
 
 </body>
 
